@@ -8,6 +8,10 @@ button {
   border-padding: 10px;
 }
 
+img {
+  border-radius: 30px;
+}
+
 .container {
   width: 80%;
   max-width: 650px;
