@@ -1,11 +1,13 @@
 class String
   define_method(:word_frequency) do |words|
+    words = words.downcase()
+    original_word = self.downcase()
     words_array = words.split(" ")
     count_array = []
 
-    if words_array.include?(self)
+    if words_array.include?(original_word)
         words_array.each() do |word|
-          if self == word
+          if original_word == word
             count_array.push(1)
           end
         end
