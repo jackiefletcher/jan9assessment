@@ -7,7 +7,7 @@ describe('String#word_frequency') do
   end
 
   it ("will check to see if the words are not the same") do
-    expect(("pearl").word_frequency("dog")).to(eq("Your word does not appear in these words!"))
+    expect(("pearl").word_frequency("dog")).to(eq(0))
   end
 
   it ("will check to see if there are multiple times the word appears in the phrase") do
