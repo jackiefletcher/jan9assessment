@@ -10,7 +10,7 @@ class String
           end
         end
     else
-      returns "Your word does not appear in these words!"
+      return "Your word does not appear in these words!"
     end
 
     sum = 0
