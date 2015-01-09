@@ -2,7 +2,7 @@ class String
   define_method(:word_frequency) do |words|
     words = words.downcase()
     original_word = self.downcase()
-    words_array = words.split(" ")
+    words_array = words.split(/[\s,'!.]/)
     count_array = []
 
     if words_array.include?(original_word)

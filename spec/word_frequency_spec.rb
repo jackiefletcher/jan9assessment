@@ -18,4 +18,8 @@ describe('String#word_frequency') do
     expect(("Pearl").word_frequency("Pearl is the pearl dog")).to(eq(2))
   end
 
+  it ("will account for punctuation") do
+    expect(("Pearl").word_frequency("Pearl! Pearl is the pearl dog")).to(eq(3))
+  end
+
 end
